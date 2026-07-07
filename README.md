@@ -2,5 +2,6 @@
 
 ## My information
 - Sirinya Yeuncheewit
-- รหัสนักศึกษา 063-9
-- ความคาดหวังของวิชานี้คือ จะสามารถนำความรู้จากวิชานี้ไปประยุกต์ใช้ในการทำงานและช่วยสร้างความตระหนักรู้ด้านไซเบอร์ให้กับที่ทำงานและสังคมรอบตัวได้ค่ะ
+- Student ID: 0568604050XX-X
+## Course Expectations:
+My expectation for this course is to effectively apply the knowledge gained to my career. Furthermore, I hope to utilize this expertise to raise cyber security awareness within my workplace and society as a whole.
