@@ -10,3 +10,15 @@ services:
       - POSTGRES_DB=sirinya
     volumes:
       - ./data/data:/var/lib/postgresql/data
+
+  admin:
+    image: dpage/pgadmin4
+    container_name: 69-s1-admin
+    depends_on:
+      - db
+    ports:
+      -"8081:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: sirinya-y@rmutp.ac.th
+      PGADMIN_DEFAULT_PASSWORD: 
+    
