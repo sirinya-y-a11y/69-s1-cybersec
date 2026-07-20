@@ -20,5 +20,5 @@ services:
       -"8081:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: sirinya-y@rmutp.ac.th
-      PGADMIN_DEFAULT_PASSWORD: 
+      PGADMIN_DEFAULT_PASSWORD: oohsehun_94
     
