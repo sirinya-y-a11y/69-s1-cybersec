@@ -21,4 +21,10 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: sirinya-y@rmutp.ac.th
       PGADMIN_DEFAULT_PASSWORD: oohsehun_94
+     Volumes:
+       - data-pgadmin:/var/lib/pgadmin
+
+volumes:
+  data-postgres:
+  data-pgadmin:
     
