@@ -24,5 +24,18 @@ services:
     volumes:
       - data-pgadmin:/var/lib/pgadmin
 
+  app:
+    image: sirinya/strapi
+    container_name: 69-s1-app
+    ports:
+      - "9091:1337"
+    envoironment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: 69-s1-db
+      DATABASE_NAME: sirinya
+      DATABASE_USERNAME: sirinya
+      DATABASE_PASSWORD: oohsehun_94
+
+
 volumes:
   data-pgadmin:
