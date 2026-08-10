@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: sirinya
       POSTGRES_DB: sirinya
     volumes:
-      - ./data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
 
   admin:
     image: dpage/pgadmin4
@@ -41,3 +41,4 @@ services:
 
 volumes:
   data-pgadmin:
+  postgres-data:
