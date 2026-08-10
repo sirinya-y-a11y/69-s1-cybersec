@@ -35,7 +35,7 @@ services:
       DATABASE_PORT: 5432
       DATABASE_NAME: sirinya
       DATABASE_USERNAME: sirinya
-      DATABASE_PASSWORD: oohsehun_94
+      DATABASE_PASSWORD: sirinya@94
 
 volumes:
   data-pgadmin:
