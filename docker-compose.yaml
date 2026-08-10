@@ -25,7 +25,7 @@ services:
       - data-pgadmin:/var/lib/pgadmin
 
   app:
-    image: sirinya/strapi
+    image: prawee/strapi
     container_name: 69-s1-app
     ports:
       - "9091:1337"
