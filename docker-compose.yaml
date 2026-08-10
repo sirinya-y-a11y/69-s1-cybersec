@@ -32,6 +32,7 @@ services:
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_HOST: 69-s1-db
+      DATABASE_PORT: 5423
       DATABASE_NAME: sirinya
       DATABASE_USERNAME: sirinya
       DATABASE_PASSWORD: oohsehun_94
