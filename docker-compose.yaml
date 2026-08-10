@@ -27,6 +27,8 @@ services:
   app:
     image: prawee/strapi
     container_name: 69-s1-app
+    depends_on:
+      - db
     ports:
       - "9091:1337"
     environment:
@@ -35,7 +37,7 @@ services:
       DATABASE_PORT: 5432
       DATABASE_NAME: sirinya
       DATABASE_USERNAME: sirinya
-      DATABASE_PASSWORD: oohsehun_94
+      DATABASE_PASSWORD: sirinya@94
 
 volumes:
   data-pgadmin:
