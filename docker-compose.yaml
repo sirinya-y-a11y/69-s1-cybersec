@@ -3,11 +3,11 @@ services:
     image: postgres:16-alpine
     container_name: 69-s1-db
     ports:
-      - 54327:5432
+      - "54327:5432"
     environment:
-      - POSTGRES_PASSWORD=sirinya@94
-      - POSTGRES_USER=sirinya
-      - POSTGRES_DB=sirinya
+      POSTGRES_PASSWORD: sirinya@94
+      POSTGRES_USER: sirinya
+      POSTGRES_DB: sirinya
     volumes:
       - ./data:/var/lib/postgresql/data
 
@@ -32,11 +32,10 @@ services:
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_HOST: 69-s1-db
-      DATABASE_PORT: 5423
+      DATABASE_PORT: 5432
       DATABASE_NAME: sirinya
       DATABASE_USERNAME: sirinya
       DATABASE_PASSWORD: oohsehun_94
-
 
 volumes:
   data-pgadmin:
