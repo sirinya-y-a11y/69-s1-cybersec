@@ -25,7 +25,7 @@ services:
       - data-pgadmin:/var/lib/pgadmin
 
   app:
-    image: prawee/strapi
+    image: strapi/strapi:latest
     container_name: 69-s1-app
     user: root
     depends_on:
