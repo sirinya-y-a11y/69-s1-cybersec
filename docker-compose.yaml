@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: 69-s1-db
+    ports:
+      - "54327:5432"
+    environment:
+      POSTGRES_PASSWORD: sirinya@94
+      POSTGRES_USER: sirinya
+      POSTGRES_DB: sirinya
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  admin:
+    image: dpage/pgadmin4
+    container_name: 69-s1-admin
+    depends_on:
+      - db
+    ports:
+      - "8081:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: sirinya-y@rmutp.ac.th
+      PGADMIN_DEFAULT_PASSWORD: oohsehun_94
+    volumes:
+      - data-pgadmin:/var/lib/pgadmin
+
+  app:
+    image: prawee/strapi
+    container_name: 69-s1-app
+    depends_on:
+      - db
+    ports:
+      - "9091:1337"
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: 69-s1-db
+      DATABASE_PORT: 5432
+      DATABASE_NAME: sirinya
+      DATABASE_USERNAME: sirinya
+      DATABASE_PASSWORD: sirinya@94
+
+volumes:
+  data-pgadmin:
+  postgres-data:
