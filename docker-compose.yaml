@@ -27,8 +27,6 @@ services:
   app:
     image: prawee/strapi
     container_name: 69-s1-app
-    user: root
-    entrypoint: ["sh", "-c", "echo '{}' > package.json && strapi new . --quickstart --no-run || true && yarn install && yarn develop"]
     depends_on:
       - db
     ports:
