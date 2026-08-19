@@ -24,20 +24,21 @@ services:
     volumes:
       - data-pgadmin:/var/lib/pgadmin
 
-    app:
-      image: prawee/strapi
-      container_name: 69-s1-app
-      depends_on:
-        - db
+  app:
+    image: prawee/strapi
+    container_name: 69-s1-app
+    depends_on:
+      - db
     ports:
       - "9091:1337"
-      environment:
-        DATABASE_CLIENT: postgres
-        DATABASE_HOST: 69-s1-db
-        DATABASE_PORT: 5432
-        DATABASE_NAME: sirinya
-        DATABASE_USERNAME: sirinya
-        DATABASE_PASSWORD: sirinya@94
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: 69-s1-db
+      DATABASE_PORT: 5432
+      DATABASE_NAME: sirinya
+      DATABASE_USERNAME: sirinya
+      DATABASE_PASSWORD: sirinya@94
 
 volumes:
   data-pgadmin:
+  postgres-data:
